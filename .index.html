@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>موقع ماما ❤️</title>
+
+<style>
+body {
+    font-family: Arial;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+    background: linear-gradient(#ffe6f0, #ffccdd);
+    transition: 0.5s;
+}
+
+/* قلوب */
+.heart {
+    position: absolute;
+    color: red;
+    font-size: 20px;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {transform: translateY(-100px);}
+    100% {transform: translateY(100vh);}
+}
+
+/* أزرار */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #ff4da6;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* مفاجأة */
+.surprise {
+    animation: pop 0.5s ease;
+}
+
+@keyframes pop {
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+}
+
+.hidden {
+    display: none;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>اهلا بيكي يا امي في تطبيقك نورتي ❤</h1>
+
+<p>
+انتي شيلتي كتير اوي وحابب اقولك ان ان شاء الله ربنا هيسترها معاكي ومتزعليش ان خالي كل الاكل بتاعنا 😂😂
+</p>
+
+<button onclick="startApp()">اضغطي هنا</button>
+
+<div id="choices" class="hidden">
+    <h3>بتحبي مين؟</h3>
+    <button onclick="love()">سليم</button>
+    <button onclick="love()">كريم</button>
+    <button onclick="love()">الاتنين ❤️</button>
+</div>
+
+<div id="question" class="hidden">
+    <h3>سؤال مهم 😏</h3>
+    <p>هل لو كانت الفلوس موجوده كنتي هتجيبيلي المايك فعلا؟</p>
+    <button onclick="answer()">صح</button>
+    <button onclick="answer()">خطأ</button>
+</div>
+
+<div id="end" class="hidden">
+    <h2>
+    شكرا يا ماما في تجولك للتطبيق بتاعي <br>
+    KAREEM ZEDAN ❤️ <br><br>
+    بحبك ها ومتنسيش تدعيلي في امتحان بكرا 🫂♥
+    </h2>
+
+    <button onclick="surprise()">اضغطي مفاجأة 🎁</button>
+
+    <div id="
